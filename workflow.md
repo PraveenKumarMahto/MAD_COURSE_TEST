@@ -23,6 +23,7 @@ function required :-
 func processingCustomerByCashier(cashierid int,customerid int) error{}
 func savetoDB(object of data)
 func addCustomerInQueue()
+func completedCustomerByCashier(cashierid int,customerid int) error{}
 
 0.> --numCashiers, --numCustomers and  --timePerCustomer,  we can get args.
 
@@ -34,4 +35,5 @@ func addCustomerInQueue()
 
 4.> one funtion that will add customer to the queue.
 
-5.> also we can create one chan tha will notify the main funtion when all goroutines complieted their  work or we can keep count using global variable using mutex
+5.> also we can create one chan at the time of (2) for completingProcess or results that will notify the completedCustomerByCashier funtion till all goroutines complieted their work or we can keep count using global variable using mutex
+
